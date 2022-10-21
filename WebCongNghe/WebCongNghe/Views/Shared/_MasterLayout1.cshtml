@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/style1.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="title">
+        <div id="header">
+             <h3>Danh sách sản phẩm</h3>
+        </div>
+    </div>
+    <div id="containt">
+        <div id="left">
+            <p>Danh mục sản phẩm</p>
+            <ul style="list-style: none">
+                <li class="option">
+                    <a href="">Trang chủ</a>
+                </li>
+                <li class="option">
+                    <a href="">Laptop</a>
+                </li>
+                <li class="option">
+                    <a href="">Điện thoại</a>
+                </li>
+                <li class="option">
+                    <a href="">Phu kien</a>
+                </li>
+            </ul>
+        </div>
+        <div id="right">
+            @RenderBody()
+        </div>
+            
+    </div>
+    <div id="footer">Web bán hàng điện tử</div>
+</body>
+</html>
